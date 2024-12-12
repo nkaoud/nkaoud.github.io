@@ -12,6 +12,8 @@
 
 
     <button onclick="moveWin()">Move "myWindow"</button>
+    <button onclick="moveWindow()">Move "moveWindow"</button>
+    <button onclick="moveWindow2()">Move "moveWindow2"</button>
 
     <script>
       var noSleep = new NoSleep();
@@ -29,7 +31,7 @@
           noSleep.enable(); // keep the screen on!
           wakeLockEnabled = true;
           toggleEl.value = "Wake Lock is enabled";
-          document.body.style.backgroundColor = "black";
+          document.body.style.backgroundColor = "brown";
 
         function moveWindow()
         {
