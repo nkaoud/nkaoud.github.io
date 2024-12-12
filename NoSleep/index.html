@@ -13,6 +13,9 @@
     <script>
       var noSleep = new NoSleep();
 
+
+      
+
       var wakeLockEnabled = false;
       var toggleEl = document.querySelector("#toggle");
       toggleEl.addEventListener('click', function() {
@@ -21,6 +24,17 @@
           wakeLockEnabled = true;
           toggleEl.value = "Wake Lock is enabled";
           document.body.style.backgroundColor = "green";
+
+        function moveWindow()
+        {
+            setTimeout(function(){
+                this.resizeTo(400,300);
+                this.moveTo(0,300);}
+            ,100);
+        }
+
+
+          
         } else {
           noSleep.disable(); // let the screen turn off.
           wakeLockEnabled = false;
