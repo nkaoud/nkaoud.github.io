@@ -17,6 +17,9 @@
       var noSleep = new NoSleep();
 
 
+      let myWindow;
+
+
       
 
       var wakeLockEnabled = false;
@@ -26,7 +29,7 @@
           noSleep.enable(); // keep the screen on!
           wakeLockEnabled = true;
           toggleEl.value = "Wake Lock is enabled";
-          document.body.style.backgroundColor = "blue";
+          document.body.style.backgroundColor = "black";
 
         function moveWindow()
         {
@@ -45,8 +48,8 @@
 
 
         function moveWin() {
-          this.moveTo(500, 100);
-          //myWindow.moveTo(500, 100);
+          //this.moveTo(500, 100);
+          myWindow.moveTo(500, 100);
         }
           
           
